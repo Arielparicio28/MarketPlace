@@ -1,12 +1,13 @@
 /* eslint-disable react/jsx-no-undef */
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import PagePrincipal from '../components/PaginaPrincipal/PagePrincipal'
+import Video from '../components/video/video'
 
 const Home = () => {
   return (
     <div>
-       <PagePrincipal/>
+    
+       <Video/>
     </div>
 
   )
