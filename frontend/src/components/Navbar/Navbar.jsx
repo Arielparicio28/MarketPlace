@@ -28,11 +28,11 @@ const Navbar = () => {
                 <Link to='/'>Home</Link>
             </li>
             <li>
-                <Link to='/content'>Products</Link>
+                <Link to='/content'>Productos</Link>
             </li>
         
             <li>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/contact'>Contacto</Link>
             </li>
         </ul>
         <div className='hamburger' onClick={handleClick}>
