@@ -30,7 +30,7 @@ const Content = () => {
             <Link to={`/content/${item._id}`}><img src={item.image_url} alt="Descripción de cada viaje" /></Link>
             <div className="card-body">
               <h5 className="card-title">{item.titulo}</h5>
-              <p className="card-text">Precio: {item.precio}</p>
+              <p className="card-text">Precio: {item.precio}€</p>
             </div>
           </div>
         ))}
