@@ -27,7 +27,7 @@
       "_id": "64acfe1efebd5d00024c3367",
       "titulo":"Virtual Transcendence:La IA te Convierte en Alguien Nuevo",
       "descripcion":"Explora nuevas facetas de tu personalidad con Virtual Transcendence. La inteligencia artificial se encargará de llevar a cabo conversaciones desafiantes en tu nombre, permitiéndote enfrentar situaciones difíciles y aprender de ellas. Desarrolla habilidades de comunicación, mejora tu confianza y experimenta una transformación personal en un entorno virtual seguro y controlado.",
-      "precio":"",
+      "precio":10,
       "image_url":""
     
     },
@@ -35,38 +35,7 @@
       "_id": "64acfe1efebd5d00024c3369",
        "titulo":"Ancestral Journeys:Descubre a tus Antepasados en VR",
        "descripcion":"Viaja en el tiempo y conoce a tus antepasados con Ancestral Journeys. Sumérgete en el pasado y experimenta la vida de tus familiares antiguos a través de reconstrucciones históricas en realidad virtual. Desde el estilo de vida hasta las tradiciones, tendrás la oportunidad de comprender y conectarte con tus raíces de una manera única y emocionante. Descubre tu herencia y despierta la curiosidad por tu linaje familiar.",
-       "precio":"",
+       "precio":40,
        "image_url":""
-    },
-    {
-      "_id": "64acfe1efebd5d00024c3368",
-     "titulo":"",
-     "descripcion":"",
-     "precio":"",
-     "image_url":""
-    },
-    {
-      "_id": "64acfe1efebd5d00024c336a",
-      "titulo":"",
-      "descripcion":"",
-      "precio":"",
-      "image_url":""
-   
-    },
-    {
-      "_id": "64acfe1efebd5d00024c336b",
-      "titulo":"",
-      "descripcion":"",
-      "precio":"",
-      "image_url":""
-      
-    },
-    {
-      "_id": "64acfe1efebd5d00024c336f",
-      "titulo":"",
-      "descripcion":"",
-      "precio":"",
-      "image_url":""
-    
     }
 ]
