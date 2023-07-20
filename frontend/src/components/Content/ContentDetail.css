@@ -1,17 +1,12 @@
-.img {
-    height: 100%;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-    border: solid 18px rgb(69, 71, 69);
-    border-radius: 5px;
-    margin-bottom: 10px;
+.back-content{
+    width: 50px;
+    margin-right: 60px;
 }
 
-.h4 {
+.info-content{
     display: flex;
-    text-align: center;
-    
-    
 }
 
+.info-content{
+    display: flex;
+}
