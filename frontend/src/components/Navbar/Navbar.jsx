@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div className={color ? 'header header-bg' : 'header'}>
-         <Link to='/'><img id='logo' src='https://cdn.glitch.global/ff80f9d6-a64f-42f1-9850-de7d0b3fdd5d/pngwing.com%20(1).png?v=1689800952817' alt="Logo Sand" /></Link>
+         
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li>
                 <Link to='/'>Home</Link>

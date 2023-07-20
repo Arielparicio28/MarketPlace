@@ -2,13 +2,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Contact from './components/Contact/Contact';
+import Contact from './routes/Contact';
 import NotFoundPage from './components/NotFoundPage';
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Home from './routes/Home'
 import Content from './components/Content/Content';
-import 'bootstrap/dist/css/bootstrap.css';
+
 
 const router = createBrowserRouter([
   {
