@@ -19,7 +19,7 @@ const Content = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <h1>Productos</h1>
       <div id='productos-container'>
         {
@@ -28,12 +28,14 @@ const Content = () => {
               <h4>{item.titulo}</h4>
               <p>Descripcion:{item.descripcion}</p>
               <p>Precio:{item.precio}</p>
-              <img src={item.image_url} alt="Descripcion de cada viaje" />
+             <Link to= {`/content/${item._id}`}> <img src={item.image_url} alt="Descripcion de cada viaje" /></Link>
             </div>
           ))}
       </div>
-    </div>
+    </>
   );
 }
 
 export default Content;
+
+

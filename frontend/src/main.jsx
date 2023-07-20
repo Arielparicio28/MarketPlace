@@ -8,6 +8,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Home from './routes/Home'
 import Content from './components/Content/Content';
+import ContentDetail from './components/Content/ContentDetail';
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/content",
         element: <Content/>,
+      },
+      {
+        path: "/content/:contentId",
+        element: <ContentDetail/>,
       },
       {
         path: "/contact",
