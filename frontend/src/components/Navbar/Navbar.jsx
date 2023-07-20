@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import './Navbar.css'
-import Cube from '../Cube/Cube';
+
 
 
 
@@ -29,7 +29,7 @@ const Navbar = () => {
         
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li>
-                <Link to='/'><Cube/></Link>
+                <Link to='/'>Home</Link>
             </li>
             <li>
                 <Link to='/content'>Products</Link>
