@@ -1,21 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './routes/Home';
-
-
-
-
-
-
 
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        
-      </Routes>
+    
     </div>
   );
 }
