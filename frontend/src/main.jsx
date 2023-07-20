@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './routes/Home'
 import Content from './components/Content/Content';
 import ContentDetail from './components/Content/ContentDetail';
+import Footer from './components/Footer/Footer';
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,9 @@ const router = createBrowserRouter([
     element: (
       <>
         <Navbar />
+        <Footer/>
         <Outlet />
+   
       </>
     ),
     children: [
