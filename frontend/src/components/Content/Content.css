@@ -1,77 +1,70 @@
-h1 {
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
     text-align: center;
     padding: 30px;
-}
-
-.data {
+  }
+  
+  /* Estilos para la tarjeta */
+  .data {
     position: relative;
-    display: inline-block;
-    width: 300px;
-    height: 200px;
+    width: 300px; /* Ajusta el ancho de las tarjetas según tus preferencias */
+    height: 400px; /* Ajusta la altura de las tarjetas según tus preferencias */
     margin: 40px;
     padding: 20px;
     background: linear-gradient(45deg, #000, #555, #fff);
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    transform-style: preserve-3d;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.data .inner-container {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column; /* Los elementos se organizarán en columna */
+  }
+  
+  .data img {
+    flex: 1; /* La imagen ocupará el espacio disponible en la tarjeta */
     width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-color: transparent;
-    border-radius: 10px;
-    transform: translateZ(50px);
-    transform-style: preserve-3d;
-    transition: transform 0.3s;
-}
-
-#productos-container {
+    height: auto; /* La altura se ajustará automáticamente para mantener la relación de aspecto */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .data h4 {
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .data p {
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+  }
+  
+  /* Estilos para el contenedor de productos */
+  #productos-container {
     display: grid;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Las tarjetas se adaptarán en filas y se mostrarán en columnas en dispositivos móviles */
     grid-gap: 20px;
     justify-items: center;
     align-items: center;
-}
-
-.data h4 {
-    font-size: 24px;
-    color: #fff;
-    margin: 0;
-}
-
-.data p {
-    font-size: 16px;
-    color: #fff;
-    margin: 10px 0;
-}
-
-.data:hover {
-    transform: translateZ(0) rotateX(10deg);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.data:hover .inner-container {
-    transform: translateZ(50px);
-}
-
-@media screen and (max-width:940px) {
-    #productos-container {
-        display: grid;
-        grid-template-columns: 1 fr 1fr;
+  }
+  
+  /* Estilos para dispositivos con ancho máximo de 768px (tabletas y móviles) */
+  @media screen and (max-width: 768px) {
+    .data {
+      padding: 10px; /* Aumentamos el padding para dar más espacio en dispositivos móviles */
     }
-}
-
-@media screen and (max-width:640px) {
-    #productos-container {
-        display: grid;
-        grid-template-columns: 1fr;
+  
+    .data h4 {
+      font-size: 20px; /* Reducimos el tamaño del título para evitar que se corte en dispositivos móviles */
     }
-}
-
-
+  
+    .data p {
+      font-size: 14px; /* Reducimos el tamaño del texto descriptivo para evitar que se desborde */
+    }
+  }
+  
