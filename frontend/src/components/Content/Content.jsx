@@ -3,19 +3,13 @@ import axios from "axios";
 import './Content.css'; 
 import { Link } from 'react-router-dom';
 
-
-
 const Content = () => {
   const [content, setContent] = useState([]);
-  const[filter,filterContent] = useState("")
+  const [filter, setFilter] = useState("");
 
   const handleSearchChange = (e) => {
-    filterContent(e.target.value);
+    setFilter(e.target.value);
   };
-  const filteredContent = content.filter((item) =>
-  item.titulo.toLowerCase().includes(filter.toLowerCase())
-);
-
 
   useEffect(() => {
     const fetchContent = async () => {
@@ -30,13 +24,25 @@ const Content = () => {
     fetchContent();
   }, []);
 
+  const filteredContent = content.filter((item) =>
+    item.titulo.toLowerCase().includes(filter.toLowerCase())
+  );
+
   return (
     <>
       <h1>Productos</h1>
       <div id="productos-container">
-        {content.map((item) => (
+        <input
+          type="text"
+          placeholder="Buscar por título"
+          value={filter}
+          onChange={handleSearchChange}
+        />
+        {filteredContent.map((item) => (
           <div key={item._id} className="data">
-            <Link to={`/content/${item._id}`}><img src={item.image_url} alt="Descripción de cada viaje" /></Link>
+            <Link to={`/content/${item._id}`}>
+              <img src={item.image_url} alt="Descripción de cada viaje" />
+            </Link>
             <div className="card-body">
               <h5 className="card-title">{item.titulo}</h5>
               <p className="card-text">Precio: {item.precio}</p>
@@ -49,4 +55,3 @@ const Content = () => {
 }
 
 export default Content;
-
