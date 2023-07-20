@@ -1,16 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import Home from './pages/Home'
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './routes/Home';
+
+
+
+
+
+
 
 function App() {
- 
-
   return (
-    <>
-    <Home/>
-   <h1>Hola Equipo</h1>
-    </>
-  )
+    <div>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        
+      </Routes>
+    </div>
+  );
 }
 
-export default App
+
+export default App;
