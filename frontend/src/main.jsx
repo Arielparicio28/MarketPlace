@@ -8,6 +8,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Home from './routes/Home'
 import Content from './components/Content/Content';
+import 'bootstrap/dist/css/bootstrap.css';
 
 const router = createBrowserRouter([
   {
