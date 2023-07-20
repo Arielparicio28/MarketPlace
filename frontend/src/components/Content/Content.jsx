@@ -7,11 +7,20 @@ import { Link } from 'react-router-dom';
 
 const Content = () => {
   const [content, setContent] = useState([]);
+  const[filter,filterContent] = useState("")
+
+  const handleSearchChange = (e) => {
+    filterContent(e.target.value);
+  };
+  const filteredContent = content.filter((item) =>
+  item.titulo.toLowerCase().includes(filter.toLowerCase())
+);
+
 
   useEffect(() => {
     const fetchContent = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/content');
+        const response = await axios.get(`http://localhost:3000/content/`);
         const data = response.data;
         setContent(data); 
       } catch (error) {

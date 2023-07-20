@@ -20,10 +20,6 @@ useEffect(()=> {
   fetchContent()
 },[contentId])
 
-
-
-
-
   return (
 <div>
 {content && (
@@ -31,18 +27,13 @@ useEffect(()=> {
 <img src={content.image_url}  width={100}/>
 <h4>Descripcion:{content.descripcion}</h4>
 
-
 </>
-
 
 )}
 
 </div>
-
-
-
-
-  )
+)
 }
 
 export default ContentDetail
+
