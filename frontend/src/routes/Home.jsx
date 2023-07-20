@@ -1,11 +1,12 @@
 /* eslint-disable react/jsx-no-undef */
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import Navbar from '../components/Navbar/Navbar'
+import PagePrincipal from '../components/PaginaPrincipal/PagePrincipal'
+
 const Home = () => {
   return (
     <div>
-       <Navbar />
+       <PagePrincipal/>
     </div>
 
   )
