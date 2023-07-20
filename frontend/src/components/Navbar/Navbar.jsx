@@ -3,6 +3,11 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import './Navbar.css'
+import Cube from '../Cube/Cube';
+
+
+
+
 
 const Navbar = () => {
     const[click, setClick] = useState(false)
@@ -21,10 +26,10 @@ const Navbar = () => {
 
   return (
     <div className={color ? 'header header-bg' : 'header'}>
-         
+        
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li>
-                <Link to='/'>Home</Link>
+                <Link to='/'><Cube/></Link>
             </li>
             <li>
                 <Link to='/content'>Products</Link>
