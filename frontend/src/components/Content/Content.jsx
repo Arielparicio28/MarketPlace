@@ -30,14 +30,14 @@ const Content = () => {
 
   return (
     <>
-      <h1>Productos</h1>
-      <div id="productos-container">
-        <input
+      <input className='input'
           type="text"
           placeholder="Buscar por título"
           value={filter}
           onChange={handleSearchChange}
         />
+      <div id="productos-container">
+       
         {filteredContent.map((item) => (
           <div key={item._id} className="data">
             <Link to={`/content/${item._id}`}>

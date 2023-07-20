@@ -10,3 +10,8 @@
 .info-content{
     display: flex;
 }
+
+.input{
+    display:flex;
+   margin:auto;
+}
