@@ -32,6 +32,8 @@ useEffect(()=> {
 <h4>Descripcion:{content.descripcion}</h4>
 
 
+
+
 </>
 
 
