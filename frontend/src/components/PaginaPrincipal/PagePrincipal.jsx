@@ -6,7 +6,7 @@ import Search from "../Busqueda/Search";
 
   
   return (
-    <div className="d-flex justify-content-center gap-3 color-secondary">
+    <div className="d-flex justify-content-center gap-3">
       <Search/>
       <h1 className="">¡Vive la Historia,Hoy!</h1>
       <h5 className="d-flex justify-content-center gap-3">
