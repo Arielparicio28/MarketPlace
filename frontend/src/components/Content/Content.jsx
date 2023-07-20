@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
 import './Content.css'; 
+import { Link } from 'react-router-dom';
 
 
 
@@ -26,13 +27,10 @@ const Content = () => {
       <div id="productos-container">
         {content.map((item) => (
           <div key={item._id} className="data">
-            <img src={item.image_url} alt="Descripción de cada viaje" />
+            <Link to={`/content/${item._id}`}><img src={item.image_url} alt="Descripción de cada viaje" /></Link>
             <div className="card-body">
               <h5 className="card-title">{item.titulo}</h5>
-              <p className="card-text">Descripcion: {item.descripcion}</p>
               <p className="card-text">Precio: {item.precio}</p>
-              {/* Si tienes un enlace para ir a algún lugar, puedes usar el siguiente botón */}
-              {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
           </div>
         ))}
@@ -42,5 +40,4 @@ const Content = () => {
 }
 
 export default Content;
-
 

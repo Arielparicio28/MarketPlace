@@ -32,7 +32,7 @@ body {
     border-radius: 10px 10px 0 0;
   }
   
-  .data h4 {
+  .data h5 {
     font-size: 24px;
     color: #fff;
     margin: 10px 0;
@@ -59,7 +59,7 @@ body {
       padding: 10px; /* Aumentamos el padding para dar más espacio en dispositivos móviles */
     }
   
-    .data h4 {
+    .data h5 {
       font-size: 20px; /* Reducimos el tamaño del título para evitar que se corte en dispositivos móviles */
     }
   
